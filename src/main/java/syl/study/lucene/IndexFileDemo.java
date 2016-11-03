@@ -77,7 +77,7 @@ public class IndexFileDemo {
             @Override
             public FileVisitResult visitFile(Path path, BasicFileAttributes attrs) throws IOException {
                 System.out.println(path.getFileName());
-                indexDoc(writer, path, attrs.lastModifiedTime().toMillis());
+//                indexDoc(writer, path, attrs.lastModifiedTime().toMillis());
                 return FileVisitResult.CONTINUE;
             }
             });
